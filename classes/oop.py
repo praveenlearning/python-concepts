@@ -1,3 +1,6 @@
+import requests
+
+
 class Person:
     increase_fraction = 1.04
 
@@ -37,24 +40,36 @@ class Person:
 
         return decorate
 
+    def social(self):
+        response = requests.get(f"http://youtube.com/{self.__first}+{self.__last}")
+        if response.ok:
+            return response.text
+        else:
+            return 'Bad Response!'
 
-tony = Person("Tony", "Stark", 64)
-
-
-def decorate(f):
-    print("running ", f)
-    return f
-
-
-@decorate
-def some_one():
-    print("Hello")
+    @fullname.setter
+    def fullname(self, value):
+        self.__first, self.__last = value.split()
 
 
-@tony.decorater()
-def some_two():
-    print("Hello")
+if __name__ == "__main__":
+    tony = Person("Tony", "Stark", 64)
 
 
-some_one()
-some_two()
+    def decorate(f):
+        print("running ", f)
+        return f
+
+
+    @decorate
+    def some_one():
+        print("Hello")
+
+
+    @tony.decorater()
+    def some_two():
+        print("Hello")
+
+
+    some_one()
+    some_two()
