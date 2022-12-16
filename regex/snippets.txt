@@ -1,0 +1,31 @@
+
+.       - Any character except new line
+\d      - Digit (0-9)
+\D      - Not a digit !(0-9)
+\w      - Word character (a-z, A-Z, 0-9, _)
+\W      - Not a word character
+\s      - Whitespace (space, tab, new line)
+\S      - Not whitespace (space, tab, new line)
+
+\b      - Word boundary
+\B      - Not a word boundary
+^       - Beginning of line
+$       - End of line
+
+[]      - Characters in bracket
+[^]     - Characters not in bracket
+|       - Either or
+()      - Group
+
+Quantifiers
+
+*       - 0 or more
++       - 1 or more
+?       - 0 or 1
+{n}     - Exact number
+{m, n}  - Range of numbers (min, max)
+
+
+***    sample regex    ***
+
+
