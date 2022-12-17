@@ -23,14 +23,20 @@ def open_file(filename, mode):
     file.close()
 
 
+def open_f(filename, mode):
+    return OpenFile(filename, mode)
+
+
 with OpenFile("some.txt", 'a') as f:
     f.write("Python is awesome\n")
-
 print(f.closed)
 
 with open_file("some.txt", "a") as f:
     f.write("Python awesome again\n")
+print(f.closed)
 
+with open_f("some.txt", "a") as f:
+    f.write("New trick")
 print(f.closed)
 
 os.makedirs("Sample-Dir-One", exist_ok=True)
