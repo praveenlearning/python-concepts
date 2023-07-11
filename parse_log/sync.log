@@ -1,0 +1,127 @@
+2022-12-21T00:07:25,200 +1100 | INFO |  |  |  | [RunUploads] --START-- Term code: 2019.1RT S1
+2022-12-21T00:07:28,116 +1100 | ERROR | au_dev_preprod3 | 2019.1RT S1 |  | Exception: Unknown server host name 'admin.mycarey.net'.
+2022-12-21T00:07:28,149 +1100 | ERROR | au_dev_preprod3 | 2019.1RT S1 |  | java.sql.SQLException: Unknown server host name 'admin.mycarey.net'.
+	at net.sourceforge.jtds.jdbc.JtdsConnection.<init>(JtdsConnection.java:427)
+	at net.sourceforge.jtds.jdbc.Driver.connect(Driver.java:184)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.seqta.base.MSSQLConnection.init(MSSQLConnection.java:40)
+	at com.seqta.base.MSSQLConnection.<init>(MSSQLConnection.java:15)
+	at com.seqta.upload.tasks.RunUploads.main(RunUploads.java:139)
+Caused by: java.net.UnknownHostException: admin.mycarey.net
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at net.sourceforge.jtds.jdbc.SharedSocket.createSocketForJDBC3(SharedSocket.java:288)
+	at net.sourceforge.jtds.jdbc.SharedSocket.<init>(SharedSocket.java:251)
+	at net.sourceforge.jtds.jdbc.JtdsConnection.<init>(JtdsConnection.java:331)
+	... 6 more
+
+2022-12-21T00:07:28,152 +1100 | INFO | au_dev_preprod3 | 2019.1RT S1 |  | Database connections closed
+2022-12-21T00:07:28,152 +1100 | INFO | au_dev_preprod3 | 2019.1RT S1 |  | [RunUploads] --FINISH-- Term code: 2019.1RT S1
+2022-12-21T00:07:28,578 +1100 | INFO |  |  |  | [RunUploads] --START-- Term code: 2017S1
+2022-12-21T00:07:28,986 +1100 | ERROR | au_dev_preprod3 | 2017S1 |  | Exception: Unknown server host name 'admin.mycarey.net'.
+2022-12-21T00:07:28,987 +1100 | ERROR | au_dev_preprod3 | 2017S1 |  | java.sql.SQLException: Unknown server host name 'admin.mycarey.net'.
+	at net.sourceforge.jtds.jdbc.JtdsConnection.<init>(JtdsConnection.java:427)
+	at net.sourceforge.jtds.jdbc.Driver.connect(Driver.java:184)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.seqta.base.MSSQLConnection.init(MSSQLConnection.java:40)
+	at com.seqta.base.MSSQLConnection.<init>(MSSQLConnection.java:15)
+	at com.seqta.upload.tasks.RunUploads.main(RunUploads.java:139)
+Caused by: java.net.UnknownHostException: admin.mycarey.net
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at net.sourceforge.jtds.jdbc.SharedSocket.createSocketForJDBC3(SharedSocket.java:288)
+	at net.sourceforge.jtds.jdbc.SharedSocket.<init>(SharedSocket.java:251)
+	at net.sourceforge.jtds.jdbc.JtdsConnection.<init>(JtdsConnection.java:331)
+	... 6 more
+
+2022-12-21T00:07:28,990 +1100 | INFO | au_dev_preprod3 | 2017S1 |  | Database connections closed
+2022-12-21T00:07:28,990 +1100 | INFO | au_dev_preprod3 | 2017S1 |  | [RunUploads] --FINISH-- Term code: 2017S1
+2022-12-21T00:07:29,403 +1100 | INFO |  |  |  | [RunUploads] --START-- Term code: 2019.2RT.S2
+2022-12-21T00:07:29,821 +1100 | ERROR | au_dev_preprod3 | 2019.2RT.S2 |  | Exception: Unknown server host name 'admin.mycarey.net'.
+2022-12-21T00:07:29,823 +1100 | ERROR | au_dev_preprod3 | 2019.2RT.S2 |  | java.sql.SQLException: Unknown server host name 'admin.mycarey.net'.
+	at net.sourceforge.jtds.jdbc.JtdsConnection.<init>(JtdsConnection.java:427)
+	at net.sourceforge.jtds.jdbc.Driver.connect(Driver.java:184)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.seqta.base.MSSQLConnection.init(MSSQLConnection.java:40)
+	at com.seqta.base.MSSQLConnection.<init>(MSSQLConnection.java:15)
+	at com.seqta.upload.tasks.RunUploads.main(RunUploads.java:139)
+Caused by: java.net.UnknownHostException: admin.mycarey.net
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at net.sourceforge.jtds.jdbc.SharedSocket.createSocketForJDBC3(SharedSocket.java:288)
+	at net.sourceforge.jtds.jdbc.SharedSocket.<init>(SharedSocket.java:251)
+	at net.sourceforge.jtds.jdbc.JtdsConnection.<init>(JtdsConnection.java:331)
+	... 6 more
+
+2022-12-21T00:07:29,825 +1100 | INFO | au_dev_preprod3 | 2019.2RT.S2 |  | Database connections closed
+2022-12-21T00:07:29,825 +1100 | INFO | au_dev_preprod3 | 2019.2RT.S2 |  | [RunUploads] --FINISH-- Term code: 2019.2RT.S2
+2022-12-21T16:43:57,064 +1100 | INFO |  |  |  | [RunUploads] --START-- Term code: 2024T1
+2022-12-21T16:44:00,179 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | UI redesign detected
+2022-12-21T16:44:00,641 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | [UploadProcess] Running for site [au_dev_preprod3]
+2022-12-21T16:44:03,263 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | Running from 2022-12-22
+2022-12-21T16:44:03,882 +1100 | INFO | au_dev_preprod3 | 2024T1 | ClassUnit | MergeInfo [class com.seqta.data.list.ClassUnitList] Merge successful:
+   ListA (Master) Size: 1
+   ListB (Subject) Size: 1
+   Result Size: 1
+   Insert count: 0
+   Update count: 0
+   Deletion count: 0
+   Existing count: 1
+
+2022-12-21T16:44:04,112 +1100 | INFO | au_dev_preprod3 | 2024T1 | Timetable | MergeInfo [class com.seqta.data.list.TimetableList] Merge successful:
+   ListA (Master) Size: 10
+   ListB (Subject) Size: 10
+   Result Size: 10
+   Insert count: 0
+   Update count: 0
+   Deletion count: 0
+   Existing count: 10
+
+2022-12-21T16:44:04,786 +1100 | INFO | au_dev_preprod3 | 2024T1 | ClassUnitStudent | -- [class com.seqta.data.list.ClassUnitStudentList] Merge successful:
+   ListA Size: 2
+   ListB Size: 2
+   Result Size: 2
+   Insert count: 0
+   Update count: 0
+   Deletion count: 0
+   Existing count: 2
+
+2022-12-21T16:44:05,092 +1100 | INFO | au_dev_preprod3 | 2024T1 | rabbitmq | Successfully queued completion message [319daa27-784d-4c96-85b3-9b5723c66535]
+2022-12-21T16:44:05,117 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | Database connections closed
+2022-12-21T16:44:05,118 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | [RunUploads] --FINISH-- Term code: 2024T1
+2022-12-21T16:55:56,640 +1100 | INFO |  |  |  | [RunUploads] --START-- Term code: 2024T1
+2022-12-21T16:55:59,288 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | UI redesign detected
+2022-12-21T16:55:59,339 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | [UploadProcess] Running for site [au_dev_preprod3]
+2022-12-21T16:56:00,495 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | Running from 2022-12-22
+2022-12-21T16:56:00,599 +1100 | ERROR | au_dev_preprod3 | 2024T1 | Subject | Exception: ERROR: column "SUBJECT_breakCODE" does not exist
+  Position: 53
+2022-12-21T16:56:00,616 +1100 | ERROR | au_dev_preprod3 | 2024T1 | Subject | org.postgresql.util.PSQLException: ERROR: column "SUBJECT_breakCODE" does not exist
+  Position: 53
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:225)
+	at com.seqta.base.Query.executeQuery(Query.java:54)
+	at com.seqta.data.factory.sql.SQLCodeFactory.getList(SQLCodeFactory.java:293)
+	at com.seqta.data.factory.sql.SQLCodeFactory.getList(SQLCodeFactory.java:307)
+	at com.seqta.data.factory.sql.SQLSubjectFactory.getList(SQLSubjectFactory.java:63)
+	at com.seqta.data.factory.sql.SQLSubjectFactory.getList(SQLSubjectFactory.java:15)
+	at com.seqta.upload.UploadProcess.retrieveAndMerge(UploadProcess.java:473)
+	at com.seqta.upload.UploadProcess.updateGeneric(UploadProcess.java:516)
+	at com.seqta.upload.UploadProcess.update(UploadProcess.java:2035)
+	at com.seqta.upload.tasks.RunUploads.main(RunUploads.java:192)
+
+2022-12-21T16:56:00,724 +1100 | INFO | au_dev_preprod3 | 2024T1 | rabbitmq | Successfully queued completion message [ed0c5a61-f941-4654-96f0-667dbff2b349]
+2022-12-21T16:56:00,753 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | Database connections closed
+2022-12-21T16:56:00,755 +1100 | INFO | au_dev_preprod3 | 2024T1 |  | [RunUploads] --FINISH-- Term code: 2024T1

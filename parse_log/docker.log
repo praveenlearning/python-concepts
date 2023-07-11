@@ -1,0 +1,36 @@
+Dec 21 16:55:49 preprod3 docker/sync-runner[11146]: main - INFO * Processing request
+Dec 21 16:55:50 preprod3 docker/sync-runner[11146]: Process - INFO -> Running sync-classic in 'normal'
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: Process - INFO Failed to execute sync-classic successfully [config: /tmp/syncrunner901934209]: exit status 1
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: Process - INFO Arguments: [/usr/share/seqta/sync-classic/scripts/upload.sh /tmp/syncrunner901934209 /etc/seqta/config/au_dev_preprod3/uploads.EDVAL 2024T1]
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: [RunUploads] --START-- Term code: 2024T1
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: UI redesign detected
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: [UploadProcess] Running for site [au_dev_preprod3]
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: Running from 2022-12-22
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: Exception: ERROR: column "SUBJECT_breakCODE" does not exist
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]:   Position: 53
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: org.postgresql.util.PSQLException: ERROR: column "SUBJECT_breakCODE" does not exist
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]:   Position: 53
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:311)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:297)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:274)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:225)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.base.Query.executeQuery(Query.java:54)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.data.factory.sql.SQLCodeFactory.getList(SQLCodeFactory.java:293)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.data.factory.sql.SQLCodeFactory.getList(SQLCodeFactory.java:307)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.data.factory.sql.SQLSubjectFactory.getList(SQLSubjectFactory.java:63)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.data.factory.sql.SQLSubjectFactory.getList(SQLSubjectFactory.java:15)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.upload.UploadProcess.retrieveAndMerge(UploadProcess.java:473)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.upload.UploadProcess.updateGeneric(UploadProcess.java:516)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.upload.UploadProcess.update(UploadProcess.java:2035)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: 	at com.seqta.upload.tasks.RunUploads.main(RunUploads.java:192)
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]:
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: Successfully queued completion message [ed0c5a61-f941-4654-96f0-667dbff2b349]
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: Database connections closed
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: [RunUploads] --FINISH-- Term code: 2024T1
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]:
+Dec 21 16:56:00 preprod3 docker/sync-runner[11146]: main - INFO ** Completed sync run **
