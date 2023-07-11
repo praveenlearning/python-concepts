@@ -1,4 +1,4 @@
-from typing import Iterable
+from typing import Iterable, List
 
 
 def my_product(*args: Iterable):
@@ -10,4 +10,13 @@ def my_product(*args: Iterable):
         yield prod
 
 
+Numbers = List[int]
+
+
+def print_nums(nums: Numbers) -> None:
+    for n in nums:
+        print(n)
+
+
 print(list(my_product((1, 2, 3), {4, 5, 6}, [7])))
+print_nums([1, 2, 3, "d"])
