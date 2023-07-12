@@ -16,4 +16,3 @@ class Singleton(metaclass=SingletonMeta):
 if __name__ == '__main__':
     s1 = Singleton()
     s2 = Singleton()
-
