@@ -16,4 +16,4 @@ jobs:
         uses: facebook/pysa-action@main
         with:
           repo-directory: './'
-          requirements-path: 'requirements.txt'
+          requirements-path: 'pyproject.toml'

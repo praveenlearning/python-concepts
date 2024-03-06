@@ -1,0 +1,14 @@
+[project]
+name = "python-concepts"
+description = ""
+readme = "README.md"
+requires-python = ">= 3.9"
+dynamic = ["version"]
+
+
+dependencies = [
+
+]
+
+[tool.setuptools.packages.find]
+exclude = [".github", ".venv", "build", "*egg*", ".gitignore"]
