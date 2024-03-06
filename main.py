@@ -1,5 +1,6 @@
 # This is a sample Python script.
 import math
+import operator
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -34,12 +35,35 @@ def binomial_expansion(x: int, y: int, n: int):
         yield c
 
 
+def tetration(m: int, n: int):
+    r = 1
+    i = 1
+    while i <= n:
+        r = m ** r
+        i += 1
+    return r
+
+
+def clueless(n: int):
+    while n < 100_000:
+        m = str(n)
+        n = ""
+        for i in range(len(m)):
+            n += str(sum(map(int, list(m[:i+1]))))
+        print(n)
+        n = int(n)
+        # print(n)
+        # break
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    exp = binomial_expansion(2, 5, 2)
-    next(exp)
-    next(exp)
-    next(exp)
+    clueless(10)
+    # print(tetration(2, 5))
+    # exp = binomial_expansion(2, 5, 2)
+    # next(exp)
+    # next(exp)
+    # next(exp)
     # print_hi('PyCharm')
     # print(list(zipped(range(50, 100), range(1000, 1050), range(101, 150))))
 
