@@ -12,8 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run Pysa Action
-        uses: facebook/pysa-action@main
-        with:
-          repo-directory: './'
-          requirements-path: 'pyproject.toml'
+      #      - name: Run Pysa Action
+      #        uses: facebook/pysa-action@main
+      #        with:
+      #          repo-directory: './'
+      #          requirements-path: 'pyproject.toml'
+
+      - name: Run PyCharm Security
+        uses: tonybaloney/pycharm-security@master
